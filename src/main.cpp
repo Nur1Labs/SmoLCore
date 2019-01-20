@@ -74,7 +74,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Mousecoin Signed Message:\n";
+const string strMessageMagic = "SmoL Signed Message:\n";
 
 // Settings
 int64_t nTransactionFee = MIN_TX_FEE;
@@ -2093,7 +2093,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         if (!CheckCoinStakeTimestamp(GetBlockTime(), (int64_t)vtx[1].nTime))
             return DoS(50, error("CheckBlock() : coinstake timestamp violation nTimeBlock=%"PRId64" nTimeTx=%u", GetBlockTime(), vtx[1].nTime));
 
-        // Mousecoin: check proof-of-stake block signature
+        // AriA: check proof-of-stake block signature
         if (fCheckSig && !CheckBlockSignature())
             return DoS(100, error("CheckBlock() : bad proof-of-stake block signature"));
     }
@@ -2364,7 +2364,7 @@ bool ProcessBlock(CNode* pfrom, CBlock* pblock)
     return true;
 }
 
-// Mousecoin: attempt to generate suitable proof-of-stake
+// AriA: attempt to generate suitable proof-of-stake
 bool CBlock::SignBlock(CWallet& wallet, int64_t nFees)
 {
     // if we are trying to sign
@@ -2452,7 +2452,7 @@ bool CheckDiskSpace(uint64_t nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "Mousecoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "SmoL", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }

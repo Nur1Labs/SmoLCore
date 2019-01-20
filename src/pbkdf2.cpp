@@ -1,4 +1,5 @@
 // Copyright (c) 2013 Mousecoin Developers
+// Copyright (c) 2010-2019 AriA Developers
 
 #include <string.h>
 #include "pbkdf2.h"

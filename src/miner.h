@@ -3,8 +3,8 @@
 // Copyright (c) 2013 The Mousecoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef Mousecoin_MINER_H
-#define Mousecoin_MINER_H
+#ifndef SmoL_MINER_H
+#define SmoL_MINER_H
 
 #include "main.h"
 #include "wallet.h"
@@ -27,4 +27,4 @@ bool CheckStake(CBlock* pblock, CWallet& wallet);
 /** Base sha256 mining transform */
 void SHA256Transform(void* pstate, void* pinput, const void* pinit);
 
-#endif // Mousecoin_MINER_H
+#endif // SmoL_MINER_H
