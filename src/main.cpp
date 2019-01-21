@@ -48,7 +48,7 @@ unsigned int nTargetSpacing = 2.1 * 60;
 //static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
 
 unsigned int nStakeMinAge = 60 * 45; // minimum age for coin age 45 minutes
-unsigned int nStakeMaxAge = 60 * 60 * 24 * 21; // stake age of full weight 21 days (time until new MIC3 are born)
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 21; // stake age of full weight 21 days (time until new SmoL are born)
 unsigned int nModifierInterval = 10 * 60; // Time to elapse before new modifier is computed
 
 int nCoinbaseMaturity = 6;
@@ -2586,6 +2586,12 @@ bool LoadBlockIndex(bool fAllowNew)
 
         //// debug print
         block.print();
+		
+		printf("block.GetHash() == %s\n", block.GetHash().ToString().c_str());
+        printf("block.hashMerkleRoot == %s\n", block.hashMerkleRoot.ToString().c_str());
+        printf("block.nTime = %u \n", block.nTime);
+        printf("block.nNonce = %u \n", block.nNonce);
+	    fflush(NULL);
 
         assert(block.hashMerkleRoot == uint256("0x3720140c882bbd5ea3a71501fb536e4ad019d1e2250fe825f2ac6428c0d36f35"));
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));

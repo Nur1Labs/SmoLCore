@@ -965,7 +965,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "Mic3";
+    const char* pszModule = "SmoL";
 #endif
     if (pex)
         return strprintf(
@@ -1008,13 +1008,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Mic3
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Mic3
-    // Mac: ~/Library/Application Support/Mic3
-    // Unix: ~/.Mic3
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\SmoL
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\SmoL
+    // Mac: ~/Library/Application Support/SmoL
+    // Unix: ~/.SmoL
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Mic3";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "SmoL";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -1026,10 +1026,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     fs::create_directory(pathRet);
-    return pathRet / "Mic3";
+    return pathRet / "SmoL";
 #else
     // Unix
-    return pathRet / ".Mic3";
+    return pathRet / ".SmoL";
 #endif
 #endif
 }
@@ -1138,7 +1138,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", "Mic3d.pid"));
+    boost::filesystem::path pathPidFile(GetArg("-pid", "SmoLd.pid"));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -1268,10 +1268,10 @@ void AddTimeData(const CNetAddr& ip, int64_t nTime)
                 if (!fMatch)
                 {
                     fDone = true;
-                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong Mic3 will not work properly.");
+                    string strMessage = _("Warning: Please check that your computer's date and time are correct! If your clock is wrong SmoL will not work properly.");
                     strMiscWarning = strMessage;
                     printf("*** %s\n", strMessage.c_str());
-                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("Mic3"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION);
+                    uiInterface.ThreadSafeMessageBox(strMessage+" ", string("SmoL"), CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION);
                 }
             }
         }
