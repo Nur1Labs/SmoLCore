@@ -6,8 +6,10 @@ SmoL-Core Light Fork From MuBdI System[AriA]
 [![CircleCI](https://circleci.com/bb/nur1labs/fruit.svg?style=svg)](https://circleci.com/bb/nur1labs/fruit) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9e99e924592842379d7ccf99a989a4a7)](https://www.codacy.com?utm_source=git@bitbucket.org&amp;utm_medium=referral&amp;utm_content=nur1labs/fruit&amp;utm_campaign=Badge_Grade)
 
 # How To Install #
+```
 git clone https://github.com/Nur1Labs/SmoLCore.git
 Just run ./install_ubu.sh or ./install_deb.sh
+```
 
 # No Source #
 Since Consensus date Dec, 2018. We Protect hard code. Except Developer HQ
