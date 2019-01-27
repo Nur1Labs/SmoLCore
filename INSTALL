@@ -1,9 +1,0 @@
-Building Mousecoin
-
-See doc/readme-qt.rst for instructions on building Mousecoin QT,
-the intended-for-end-users, nice-graphical-interface, reference
-implementation of Mousecoin.
-
-See doc/build-*.txt for instructions on building Mousecoind,
-the intended-for-services, no-graphical-interface, reference
-implementation of Mousecoin.
