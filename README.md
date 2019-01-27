@@ -14,7 +14,7 @@ Since Consensus date Dec, 2018. We Protect hard code. Except Developer HQ
 
 # License ##
 
-Copyright (c) 2019, Nur1labs.Ltd  
+Copyright (c) 2019, Nur1labs.Ltd
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
