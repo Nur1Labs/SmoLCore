@@ -14,8 +14,8 @@ wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
 tar -xzvf db-4.8.30.NC.tar.gz
 cd db-4.8.30.NC/build_unix/
 ../dist/configure --enable-cxx --disable-shared --with-pic
-make install && cd ../..
+sudo make install && cd ../..
 
 #tar
-sudo wget 'http://nur1labs.net/lf/smol_ubu.tar.gz'
+wget 'http://nur1labs.net/lf/smol_ubu.tar.gz'
 cd smol_ubu && ./smold -daemon

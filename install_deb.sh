@@ -4,10 +4,10 @@
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #this for autoinstall
-sudo apt install -y build-essential libtool autotools-dev automake pkg-config libssl-dev bsdmainutils libboost-all-dev libminiupnpc-dev libzmq3-dev git wget libevent-pthreads-2.0-5
+apt install -y build-essential libtool autotools-dev automake pkg-config libssl-dev bsdmainutils libboost-all-dev libminiupnpc-dev libzmq3-dev git wget libevent-pthreads-2.0-5
 git clone https://github.com/libevent/libevent.git
 cd libevent
-./autogen.sh && ./configure && sudo make && sudo make install && cd ..
+./autogen.sh && ./configure && make && make install && cd ..
 
 #db
 wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
@@ -17,5 +17,5 @@ cd db-4.8.30.NC/build_unix/
 make install && cd ../..
 
 #tar
-sudo wget 'http://nur1labs.net/lf/smol_deb.tar.gz'
+wget 'http://nur1labs.net/lf/smol_deb.tar.gz'
 cd smol_ubu && ./smold -daemon
