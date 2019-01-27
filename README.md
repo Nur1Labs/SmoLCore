@@ -12,6 +12,8 @@ Just run ./install_ubu.sh or ./install_deb.sh
 # No Source #
 Since Consensus date Dec, 2018. We Protect hard code. Except Developer HQ
 
+Look Wiki : https://wiki.nur1labs.net/index.php/Consensus
+
 # License ##
 
 Copyright (c) 2019, Nur1labs.Ltd
