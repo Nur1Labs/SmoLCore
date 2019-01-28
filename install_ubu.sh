@@ -18,4 +18,5 @@ sudo make install && cd ../..
 
 #tar
 wget 'http://nur1labs.net/lf/smol_ubu.tar.gz'
+tar -xzvf smol_ubu.tar.gz
 cd smol_ubu && ./smold -daemon
