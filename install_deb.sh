@@ -18,4 +18,5 @@ make install && cd ../..
 
 #tar
 wget 'http://nur1labs.net/lf/smol_deb.tar.gz'
+tar -xzvf smol_deb.tar.gz
 cd smol_ubu && ./smold -daemon
