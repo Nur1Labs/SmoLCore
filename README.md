@@ -1,20 +1,21 @@
 SmoL Core
 =====================================
 
-SmoL-Core Light Fork From MuBdI System[AriA]
+[![CircleCI](https://circleci.com/bb/nur1labs/aria.svg?style=svg)](https://circleci.com/bb/nur1labs/aria)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4209ccb0a316482e840a478484504585)](https://www.codacy.com?utm_source=git@bitbucket.org&amp;utm_medium=referral&amp;utm_content=nur1labs/aria&amp;utm_campaign=Badge_Grade)
 
-[![CircleCI](https://circleci.com/bb/nur1labs/fruit.svg?style=svg)](https://circleci.com/bb/nur1labs/fruit) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/9e99e924592842379d7ccf99a989a4a7)](https://www.codacy.com?utm_source=git@bitbucket.org&amp;utm_medium=referral&amp;utm_content=nur1labs/fruit&amp;utm_campaign=Badge_Grade)
+SmoL-Core For Public System MuBdI
 
-# How To Install #
+# How to Install Ubuntu
 ```
-git clone https://github.com/Nur1Labs/SmoLCore.git
-Just run ./install_ubu.sh or ./install_deb.sh
+git clone https://github.com/Nur1Labs/smol.git
+chmod 755 -R smol
+cd smol
+./install_ubu.sh
 ```
 
-# No Source #
-Since Consensus date Dec, 2018. We Protect hard code. Except Developer HQ
-
-Look Wiki : https://wiki.nur1labs.net/index.php/Consensus
+# Developer Contact
+founder@nur1labs.net
 
 # License ##
 
