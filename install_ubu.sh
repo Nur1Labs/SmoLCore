@@ -17,6 +17,6 @@ cd db-4.8.30.NC/build_unix/
 sudo make install && cd ../..
 
 #tar
-wget 'http://nur1labs.net/lf/smol_ubu.tar.gz'
-tar -xzvf smol_ubu.tar.gz
-cd smol_ubu && ./smold -daemon
+wget 'http://nur1labs.net/lf/sml_ubu.tar.gz'
+tar -xzvf sml_ubu.tar.gz
+cd sml_ubu && ./smold -daemon
