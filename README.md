@@ -17,6 +17,36 @@ cd smol
 # Developer Contact
 founder@nur1labs.net
 
+# DEVELOPMENT TAGS ##
+
+tags is list for easy what we change. so make sure that arrange.
+
+| DEVTAG | README                                        |
+| ------ | --------------------------------------------- |
+| all    | all sources + QT + db + anything inside cores |
+| src    | change for sources not QT or anything cores   |
+| ui     | qt not source or anything                     |
+| web    | web based                                     |
+| cdc    | codacy integrated                             |
+| crc    | circleci integrated                           |
+| doc    | documents                                     |
+| con    | consoles like android, iphone, raspi,etc      |
+| git    | gitian builder                                |
+| host   | connect to host system                        |
+| key    | for auditing key system			 |
+| json   | for json updates				 |
+| dep    | for all deployment install                    |
+| rsa    | for rsa key                                   |
+| sec    | for security purpose                          |
+
+New Tags Roles :
+
+[DevTag][Target]
+
+Notes :
+DevTag : up there
+Target : system/subsystem. System for main aria. AriA not have masternodes. Subsystem is child aria. Has masternodes. so update/upgrades same.
+
 # License ##
 
 Copyright (c) 2019, Nur1labs.Ltd
@@ -46,23 +76,3 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-# DEVELOPMENT TAGS ##
-
-tags is list for easy what we change. so make sure that arrange.
-
-| DEVTAG | README                                        |
-| ------ | --------------------------------------------- |
-| all    | all sources + QT + db + anything inside cores |
-| src    | change for sources not QT or anything cores   |
-| ui     | qt not source or anything                     |
-| web    | web based                                     |
-| cdc    | codacy integrated                             |
-| crc    | circleci integrated                           |
-| doc    | documents                                     |
-| con    | consoles like android, iphone, raspi,etc      |
-| git    | gitian builder                                |
-| host   | connect to host system                        |
-| key    | for auditing key system						 |
-| json   | for json updates								 |
-| dep    | for all deployment install                    |
